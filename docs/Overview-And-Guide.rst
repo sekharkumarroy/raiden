@@ -45,3 +45,17 @@ After you have done that you can proceed to install the dependencies::
 
     pip install --upgrade -r requirements.txt
     python setup.py develop
+--------------------------------------------------------------------------------------------------------------------
+Installation notes - 
+OS - Ubuntu 14.04.4 LTS
+After invokin the comamnd "pip install pyethapp" got the below error - 
+distutils.errors.DistutilsError: Setup script exited with error: command 'x86_64 -linux-gnu-gcc' failed with exit status 1
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root /secp256k1
+Storing debug log for failure in /home/ubuntu/.pip/pip.log
+
+Solution - 
+sudo apt-get install python-dev
+
